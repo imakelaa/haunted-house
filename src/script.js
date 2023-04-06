@@ -40,6 +40,22 @@ const grassAmbientOcclusionTexture = textureLoader.load('/textures/grass/ambient
 const grassNormalTexture = textureLoader.load('/textures/grass/normal.jpg')
 const grassRoughnessTexture = textureLoader.load('/textures/grass/roughness.jpg')
 
+grassColorTexture.repeat.set(8, 8)
+grassAmbientOcclusionTexture.repeat.set(8, 8)
+grassNormalTexture.repeat.set(8, 8)
+grassRoughnessTexture.repeat.set(8, 8)
+
+//to repeat the grass texture till it covers the floor
+grassColorTexture.wrapS = THREE.RepeatWrapping
+grassAmbientOcclusionTexture.wrapS = THREE.RepeatWrapping
+grassNormalTexture.wrapS = THREE.RepeatWrapping
+grassRoughnessTexture.wrapS = THREE.RepeatWrapping
+
+grassColorTexture.wrapT = THREE.RepeatWrapping
+grassAmbientOcclusionTexture.wrapT = THREE.RepeatWrapping
+grassNormalTexture.wrapT = THREE.RepeatWrapping
+grassRoughnessTexture.wrapT = THREE.RepeatWrapping
+
 /**
  * House
  */
